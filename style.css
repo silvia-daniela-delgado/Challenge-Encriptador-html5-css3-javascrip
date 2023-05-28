@@ -1,0 +1,162 @@
+body{
+    font-family: 'Exo 2', sans-serif;
+    background-image: url(fondo-encriptacion-datos-digitales_1406-108.avif);
+    margin: 2% 2% 0 0;
+}
+header {
+    display: flex; 
+    float: right;
+}
+main {
+    display: flex;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-right: 2em;
+}
+.caja{
+    width: 30%;
+    position: relative;
+    margin: 6 6 6 6;
+    float:left;
+}
+.tituloCajas {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+}
+.texto {
+    text-align: center;
+    color: white;
+    font-size: 140%;
+}
+.textoLink {
+    text-decoration: none;
+    box-shadow: none;
+}
+.items li{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    margin: 1.5% 1.5%;
+    padding: 15px 15px 15px 15px;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.items li:hover{
+    border: 5px solid #f5f7f8;
+    -webkit-text-stroke: 1.7px #f5f7f8;
+    transition: 500ms;
+    box-shadow: 8px 8px 25px 10px rgb(248, 245, 245);
+}
+.input-texto {
+    width: 70%;
+    height: 80%;
+    border: none;
+    color: rgb(250, 250, 249);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em;
+    background-color: rgba(31, 199, 31, 0.5);
+    margin: auto;
+    resize: none;
+    outline: none;
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    display: block;
+}
+.input-texto::placeholder{
+    color: #fcfeff;
+    font-weight: lighter;
+}
+.btn-enc {
+    display: block;
+    background: #042361;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    width: 50%;
+    margin: 3.5% 25%;
+    padding: 1em 5em 1em 5em;
+    box-sizing: border-box;
+    border: 3px solid rgb(248, 246, 246);
+    border-radius: 2em;
+    border-top-left-radius: 0;
+}
+.mensaje {
+    width: 80%;
+    height: 60%;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em;
+    background-color: rgb(1, 1, 12);
+    filter: opacity(0.7);
+    margin: auto;
+    resize: none; 
+    outline: none;
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    display: block;
+}
+.btn-copiar {
+    background: rgb(159, 216, 3);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    width: 50%;
+    margin: 2% 30%;
+    padding: 1em 2em 1em 2em;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 2em;
+}
+.btn-des {
+    display: block;
+    background: rgb(248, 245, 245);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0e65bd;
+    font-size: 1em;
+    width: 50%;
+    margin: 6% 25%;
+    padding: 1em 3em 1em 3.5em;
+    box-sizing: border-box;
+    border: 3px solid rgb(39, 8, 110);
+    border-radius: 2em;
+    border-bottom-right-radius: 0;
+}
+.btn-enc:hover {
+    border: #064070;
+    transform: scale(2.2);
+    transition: 2s all;
+    cursor: pointer;
+}
+.btn-des:hover {
+    border: rgb(245, 240, 240);
+    transform: scale(2.2);
+    transition: 2s all;
+    cursor: pointer;
+}
+.btn-copiar:hover {
+    background: rgb(225, 247, 176);
+    transform: scale(2.2);
+    transition: 2s all;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    padding: 3em;
+}
+.copyright{
+    color: rgb(253, 250, 250);
+    font-size: 2em;
+    font-weight: bold;
+}
