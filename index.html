@@ -1,80 +1,79 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="es"> <!-- Inicio del elemento HTML con el atributo lang para indicar el idioma -->
 
-<html lang="es">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-widht">
-        <title>Encriptador</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">   
+    <head> <!-- Encabezado de la página -->
+        <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres a UTF-8 -->
+        <meta name="viewport" content="width=device-widht"> <!-- Configuración de la vista en dispositivos móviles -->
+        <title>Encriptador</title> <!-- Título de la página que aparecerá en la pestaña del navegador -->
+        <link rel="stylesheet" href="reset.css"> <!-- Enlace a una hoja de estilo externa llamada "reset.css" -->
+        <link rel="stylesheet" href="style.css"> <!-- Enlace a una hoja de estilo externa llamada "style.css" -->
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet"> <!-- Enlace a una fuente de Google Fonts llamada "Exo+2" -->
     </head>
  
-    <body>
+    <body> <!-- Cuerpo de la página web -->
 
-        <header>
-            <div class="contenedor">  
-                <a class="logo" href="https://www.aluracursos.com/" target="_blank">
-                    <img src="logo_alura1.png" alt="Logo de Alura">
+        <header> <!-- Encabezado de la página -->
+            <div class="contenedor"> <!-- Div que contiene elementos dentro del encabezado -->
+                <a class="logo" href="https://www.aluracursos.com/" target="_blank"> <!-- Enlace a la página de Alura con un logotipo -->
+                    <img src="logo_alura1.png" alt="Logo de Alura"> <!-- Imagen del logotipo con texto alternativo -->
                 </a>
             </div>
         </header>
 
-        <main>
+        <main> <!-- Contenido principal de la página -->
 
-            <section class="caja">
-                <div>
-                    <ul class="items">
-                        <li>
-                            <h2 class="tituloCajas">Challenger #1</h2>
-                            <p class="texto">Primer Reto Encriptador de Texto</p>
+            <section class="caja"> <!-- Sección con la clase "caja" -->
+                <div> <!-- Div que contiene elementos dentro de la sección -->
+                    <ul class="items"> <!-- Lista no ordenada con la clase "items" -->
+                        <li> <!-- Elemento de la lista -->
+                            <h2 class="tituloCajas">Challenger #1</h2> <!-- Encabezado de nivel 2 con la clase "tituloCajas" -->
+                            <p class="texto">Primer Reto Encriptador de Texto</p> <!-- Párrafo con la clase "texto" -->
                         </li>
                         
-                        <li>
-                            <h3 class="tituloCajas">Autor</h3>
-                            <p class="texto">Daniela Delgado</p>
-                            <p class="texto">FullStack Developer</p>
-    
+                        <li> <!-- Otro elemento de la lista -->
+                            <h3 class="tituloCajas">Autor</h3> <!-- Encabezado de nivel 3 con la clase "tituloCajas" -->
+                            <p class="texto">Daniela Delgado</p> <!-- Párrafo con la clase "texto" -->
+                            <p class="texto">FullStack Developer</p> <!-- Párrafo adicional con la clase "texto" -->
                         </li>
     
-                        <li>
-                            <h2 class="tituloCajas">Redes</h2>
+                        <li> <!-- Otro elemento de la lista -->
+                            <h2 class="tituloCajas">Redes</h2> <!-- Encabezado de nivel 2 con la clase "tituloCajas" -->
     
-                            <a class="textoLink" href="https://www.linkedin.com/in/daniela-delgado-384896274/" target="_blank">Linkedin</a>
+                            <a class="textoLink" href="https://www.linkedin.com/in/daniela-delgado-384896274/" target="_blank">Linkedin</a> <!-- Enlace con la clase "textoLink" que se abrirá en una nueva pestaña -->
     
-                            <p></p><a class="textoLink" href="https://app.aluracursos.com/user/dani-sil-25" target="_blank">Perfil Alura</a></p>
+                            <p></p><a class="textoLink" href="https://app.aluracursos.com/user/dani-sil-25" target="_blank">Perfil Alura</a></p> <!-- Enlace adicional con la clase "textoLink" -->
     
-                            <a class="textoLink" href="https://app.aluracursos.com/user/dani-sil-25" target="_blank">GitHub</a>
+                            <a class="textoLink" href="https://app.aluracursos.com/user/dani-sil-25" target="_blank">GitHub</a> <!-- Otro enlace con la clase "textoLink" -->
                         </li>
                     </ul>
                 </div>
             </section>
     
-            <section>
-                <textarea class="input-texto" cols="40" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-                <button class="btn-enc" onclick="btnEncriptar()">
+            <section> <!-- Otra sección sin clase especificada -->
+                <textarea class="input-texto" cols="40" rows="10" placeholder="Ingrese el texto aquí"></textarea> <!-- Área de texto con la clase "input-texto" y atributos cols y rows -->
+                <button class="btn-enc" onclick="btnEncriptar()"> <!-- Botón con la clase "btn-enc" y un evento onclick asociado -->
                     Encriptar
                 </button>
             </section>
     
-            <section>
-                <textarea class="mensaje" cols="40" rows="10"></textarea>
-                <button class="btn-copiar" onclick="btnCopiar()">
+            <section> <!-- Otra sección sin clase especificada -->
+                <textarea class="mensaje" cols="40" rows="10"></textarea> <!-- Otra área de texto con la clase "mensaje" y atributos cols y rows -->
+                <button class="btn-copiar" onclick="btnCopiar()"> <!-- Botón con la clase "btn-copiar" y un evento onclick asociado -->
                     Copiar
                 </button>
-                <button class="btn-des" onclick="btnDesencriptar()">
+                <button class="btn-des" onclick="btnDesencriptar()"> <!-- Otro botón con la clase "btn-des" y un evento onclick asociado -->
                     Desencriptar
                 </button>
-
             </section>
     
         </main>
 
-        <footer>
-            <p class="copyright">&copy Copyright Daniela Delgado - 2023 </p>
+        <footer> <!-- Pie de página -->
+            <p class="copyright">&copy Copyright Daniela Delgado - 2023 </p> <!-- Párrafo con la clase "copyright" que contiene información de derechos de autor -->
         </footer>   
 
-        <script src="scrip.js"></script>
+        <script src="scrip.js"></script> <!-- Enlace a un archivo JavaScript llamado "scrip.js" -->
     </body>
 </html>
+
+

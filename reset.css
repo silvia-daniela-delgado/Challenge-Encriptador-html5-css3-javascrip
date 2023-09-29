@@ -1,5 +1,4 @@
-
-
+/* Establece el margen, el relleno y el borde a 0 y hereda la fuente y el tamaño de fuente por defecto */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -13,33 +12,43 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	margin: 0; /* Establece el margen en 0 */
+	padding: 0; /* Establece el relleno en 0 */
+	border: 0; /* Establece el borde en 0 */
+	font-size: 100%; /* Establece el tamaño de fuente al 100% (tamaño por defecto) */
+	font: inherit; /* Hereda la fuente del elemento padre */
+	vertical-align: baseline; /* Alinea verticalmente respecto a la línea base */
 }
 
+/* Establece elementos de sección como bloques */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: block; /* Los elementos de sección se muestran como bloques */
 }
+
 body {
-	line-height: 2;
+	line-height: 2; /* Establece la altura de línea a 2 (doble espacio entre líneas) */
 }
+
+/* Quita las viñetas y los números de lista */
 ol, ul {
-	list-style: none;
+	list-style: none; /* Elimina la viñeta o número de lista */
 }
+
+/* Quita las comillas de las citas */
 blockquote, q {
-	quotes: none;
+	quotes: none; /* Elimina las comillas */
 }
+
+/* Contenido antes y después de elementos bloque */
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+	content: ''; /* Elimina cualquier contenido antes y después de los elementos de bloque */
+	content: none; /* Asegura que no haya contenido */
 }
+
+/* Configuración de las tablas */
 table {
-	border-collapse: collapse;
-	border-spacing: 1;
+	border-collapse: collapse; /* Colapsa los bordes de las celdas de la tabla */
+	border-spacing: 1px; /* Espaciado entre las celdas de la tabla */
 }

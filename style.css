@@ -1,162 +1,109 @@
-body{
-    font-family: 'Exo 2', sans-serif;
-    background-image: url(fondo-encriptacion-datos-digitales_1406-108.avif);
-    margin: 2% 2% 0 0;
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Exo 2', sans-serif; /* Selecciona la fuente 'Exo 2' y usa sans-serif como fuente de respaldo */
+    background-image: url(fondo-encriptacion-datos-digitales_1406-108.avif); /* Establece una imagen de fondo */
+    margin: 2% 2% 0 0; /* Define los márgenes superior, derecho, inferior e izquierdo */
 }
+
+/* Estilos para el encabezado */
 header {
-    display: flex; 
-    float: right;
+    display: flex; /* Configura el encabezado como un contenedor flexible */
+    float: right; /* Hace que el encabezado flote a la derecha */
 }
+
+/* Estilos para el contenido principal */
 main {
-    display: flex;
-    margin-left: 2em;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    margin-right: 2em;
+    display: flex; /* Configura el contenido principal como un contenedor flexible */
+    margin-left: 2em; /* Establece el margen izquierdo en 2em */
+    margin-bottom: 2em; /* Establece el margen inferior en 2em */
+    margin-top: 2em; /* Establece el margen superior en 2em */
+    margin-right: 2em; /* Establece el margen derecho en 2em */
 }
-.caja{
-    width: 30%;
-    position: relative;
-    margin: 6 6 6 6;
-    float:left;
+
+/* Estilos para la clase "caja" */
+.caja {
+    width: 30%; /* Establece el ancho en un 30% */
+    position: relative; /* Establece la posición como relativa */
+    margin: 6 6 6 6; /* Define los márgenes superior, derecho, inferior e izquierdo */
+    float: left; /* Hace que las cajas floten a la izquierda */
 }
+
+/* Estilos para los títulos de las cajas */
 .tituloCajas {
-    text-align: center;
-    color: white;
-    font-size: 150%;
+    text-align: center; /* Centra el texto horizontalmente */
+    color: white; /* Establece el color del texto en blanco */
+    font-size: 150%; /* Establece el tamaño de fuente al 150% */
 }
+
+/* Estilos para el texto en las cajas */
 .texto {
-    text-align: center;
-    color: white;
-    font-size: 140%;
+    text-align: center; /* Centra el texto horizontalmente */
+    color: white; /* Establece el color del texto en blanco */
+    font-size: 140%; /* Establece el tamaño de fuente al 140% */
 }
+
+/* Estilos para los enlaces de texto */
 .textoLink {
-    text-decoration: none;
-    box-shadow: none;
+    text-decoration: none; /* Elimina la decoración de enlace (subrayado) */
+    box-shadow: none; /* Elimina la sombra del cuadro del enlace */
 }
-.items li{
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    width: 100%;
-    margin: 1.5% 1.5%;
-    padding: 15px 15px 15px 15px;
-    box-sizing: border-box;
-    border: 3px solid white;
-    border-radius: 20px;
-    border-top-left-radius: 20px;
+
+/* Estilos para los elementos de la lista dentro de la clase "items" */
+.items li {
+    display: block; /* Configura los elementos de lista como bloques */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 1em; /* Establece el tamaño de fuente en 1em */
+    width: 100%; /* Establece el ancho en 100% */
+    margin: 1.5% 1.5%; /* Define los márgenes superior e inferior y los márgenes izquierdo y derecho */
+    padding: 15px 15px 15px 15px; /* Establece el relleno */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total */
+    border: 3px solid white; /* Establece el borde de 3px sólido en blanco */
+    border-radius: 20px; /* Establece el radio de borde en 20px */
+    border-top-left-radius: 20px; /* Establece el radio de borde superior izquierdo en 20px */
 }
-.items li:hover{
-    border: 5px solid #f5f7f8;
-    -webkit-text-stroke: 1.7px #f5f7f8;
-    transition: 500ms;
-    box-shadow: 8px 8px 25px 10px rgb(248, 245, 245);
+
+/* Estilos para los elementos de lista cuando se pasa el mouse sobre ellos */
+.items li:hover {
+    border: 5px solid #f5f7f8; /* Cambia el borde cuando se pasa el mouse */
+    -webkit-text-stroke: 1.7px #f5f7f8; /* Agrega un contorno al texto */
+    transition: 500ms; /* Agrega una transición suave de 500ms */
+    box-shadow: 8px 8px 25px 10px rgb(248, 245, 245); /* Agrega una sombra */
 }
+
+/* Estilos para el área de entrada de texto */
 .input-texto {
-    width: 70%;
-    height: 80%;
-    border: none;
-    color: rgb(250, 250, 249);
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 1em;
-    background-color: rgba(31, 199, 31, 0.5);
-    margin: auto;
-    resize: none;
-    outline: none;
-    border-radius: 15px;
-    border-top-left-radius: 15px;
-    display: block;
+    width: 70%; /* Establece el ancho en 70% */
+    height: 80%; /* Establece la altura en 80% */
+    border: none; /* Elimina el borde */
+    color: rgb(250, 250, 249); /* Establece el color del texto */
+    font-size: 1.5em; /* Establece el tamaño de fuente en 1.5em */
+    font-weight: bold; /* Establece el peso de la fuente en negrita */
+    padding: 1em; /* Establece el relleno */
+    background-color: rgba(31, 199, 31, 0.5); /* Establece el color de fondo con transparencia */
+    margin: auto; /* Centra el elemento horizontalmente */
+    resize: none; /* Deshabilita la redimensionabilidad del área de texto */
+    outline: none; /* Elimina el contorno de enfoque */
+    border-radius: 15px; /* Establece el radio de borde en 15px */
+    border-top-left-radius: 15px; /* Establece el radio de borde superior izquierdo en 15px */
+    display: block; /* Configura el elemento como un bloque */
 }
-.input-texto::placeholder{
-    color: #fcfeff;
-    font-weight: lighter;
+
+/* Estilos para el marcador de posición del área de entrada de texto */
+.input-texto::placeholder {
+    color: #fcfeff; /* Establece el color del marcador de posición */
+    font-weight: lighter; /* Establece un peso de fuente más ligero */
 }
+
+/* Estilos para el botón de encriptar */
 .btn-enc {
-    display: block;
-    background: #042361;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
-    width: 50%;
-    margin: 3.5% 25%;
-    padding: 1em 5em 1em 5em;
-    box-sizing: border-box;
-    border: 3px solid rgb(248, 246, 246);
-    border-radius: 2em;
-    border-top-left-radius: 0;
-}
-.mensaje {
-    width: 80%;
-    height: 60%;
-    border: none;
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 1em;
-    background-color: rgb(1, 1, 12);
-    filter: opacity(0.7);
-    margin: auto;
-    resize: none; 
-    outline: none;
-    border-radius: 15px;
-    border-top-left-radius: 15px;
-    display: block;
-}
-.btn-copiar {
-    background: rgb(159, 216, 3);
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
-    width: 50%;
-    margin: 2% 30%;
-    padding: 1em 2em 1em 2em;
-    box-sizing: border-box;
-    border: 3px solid white;
-    border-radius: 2em;
-}
-.btn-des {
-    display: block;
-    background: rgb(248, 245, 245);
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: #0e65bd;
-    font-size: 1em;
-    width: 50%;
-    margin: 6% 25%;
-    padding: 1em 3em 1em 3.5em;
-    box-sizing: border-box;
-    border: 3px solid rgb(39, 8, 110);
-    border-radius: 2em;
-    border-bottom-right-radius: 0;
-}
-.btn-enc:hover {
-    border: #064070;
-    transform: scale(2.2);
-    transition: 2s all;
-    cursor: pointer;
-}
-.btn-des:hover {
-    border: rgb(245, 240, 240);
-    transform: scale(2.2);
-    transition: 2s all;
-    cursor: pointer;
-}
-.btn-copiar:hover {
-    background: rgb(225, 247, 176);
-    transform: scale(2.2);
-    transition: 2s all;
-    cursor: pointer;
-}
-footer{
-    text-align: center;
-    padding: 3em;
-}
-.copyright{
-    color: rgb(253, 250, 250);
-    font-size: 2em;
-    font-weight: bold;
-}
+    display: block; /* Configura el botón como un bloque */
+    background: #042361; /* Establece el fondo del botón */
+    text-align: center; /* Centra el texto horizontalmente */
+    text-decoration: none; /* Elimina la decoración de texto (subrayado) */
+    color: white; /* Establece el color del texto en blanco */
+    font-size: 1em; /* Establece el tamaño de fuente en 1em */
+    width: 50%; /* Establece el ancho en 50% */
+    margin: 3.5% 25%; /* Define los márgenes superior e inferior y los márgenes izquierdo y derecho */
+    padding: 1em 5em 1em 5em; /* Establece el relleno */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total */
+    border: 
